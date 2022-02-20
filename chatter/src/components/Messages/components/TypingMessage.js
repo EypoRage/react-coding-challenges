@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-export default function Typing() {
+function Typing() {
   const [numberOfDots, setDots] = useState(1);
 
   const incrementDots = () => {
@@ -24,3 +24,4 @@ export default function Typing() {
     </p>
   );
 }
+export default React.memo(Typing)

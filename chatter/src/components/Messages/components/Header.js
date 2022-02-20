@@ -1,7 +1,7 @@
 import React from 'react';
 import UserProfile from '../../../common/components/UserProfile';
 
-export default function Header() {
+function Header() {
   return (
     <div className="messages__header">
       <div className="messages__header__left-content">
@@ -24,3 +24,5 @@ export default function Header() {
     </div>
   );
 }
+
+export default React.memo(Header)

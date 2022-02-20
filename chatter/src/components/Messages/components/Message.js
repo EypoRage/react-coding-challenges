@@ -3,7 +3,7 @@ import cx from 'classnames';
 
 const ME = 'me';
 
-export default function Message({ nextMessage, message, botTyping }) {
+function Message({ nextMessage, message, botTyping }) {
   return (
     <p
       className={cx(
@@ -21,3 +21,5 @@ export default function Message({ nextMessage, message, botTyping }) {
     </p>
   );
 }
+
+export default React.memo(Message)
